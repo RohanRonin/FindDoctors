@@ -4,7 +4,7 @@ import AdminLogin from './Authentication/AdminLogin';
 import UserLogin from './Authentication/UserLogin';
 import Signup from './Authentication/Signup'; // Assume you have a Signup component
 import Main from './Authentication/MainPage'; // Assume you have a Home component
-//import First from './Components/First';
+import HomePage from './Pages/HomePage';
 
 const App = () => {
   return (
@@ -15,6 +15,7 @@ const App = () => {
         <Route path="/admin-login" element={<AdminLogin />} />
         <Route path="/user-login" element={<UserLogin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/HomePage" element={<HomePage />}/>
         </Routes>
         </Router>
         </div>
@@ -22,6 +23,5 @@ const App = () => {
     };
     
     export default App;
-    //<Route path="/first" element={<First />}/>
 /*
 */

@@ -19,14 +19,14 @@ body {
   
   .login-box {
     background: #fff;
-    padding: 2rem;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
   .login-box img {
-    width: 100px;
+    width: 50px;
     margin-bottom: 1rem;
   }
   
