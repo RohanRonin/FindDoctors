@@ -1,63 +1,57 @@
 import React from 'react';
-import Card from './Card';
 import './CardData.css';
 
-const cardsData = [
-  {
-    image: 'path-to-image1.jpg',
-    title: 'Title 1',
-    description: 'Description for card 1.',
-  },
-  {
-    image: 'path-to-image2.jpg',
-    title: 'Title 2',
-    description: 'Description for card 2.',
-  },
-  {
-    image: 'path-to-image3.jpg',
-    title: 'Title 3',
-    description: 'Description for card 3.',
-  },
-  {
-    image: 'path-to-image4.jpg',
-    title: 'Title 4',
-    description: 'Description for card 4.',
-  },
-  {
-    image: 'path-to-image5.jpg',
-    title: 'Title 5',
-    description: 'Description for card 5.',
-  },
-  {
-    image: 'path-to-image6.jpg',
-    title: 'Title 6',
-    description: 'Description for card 6.',
-  },
-  {
-    image: 'path-to-image6.jpg',
-    title: 'Title 7',
-    description: 'Description for card 6.',
-  },
-  {
-    image: 'path-to-image6.jpg',
-    title: 'Title 8',
-    description: 'Description for card 6.',
-  },
-];
+const Card = ({ title, content, linkText, linkHref, icon }) => {
+  return (
+    <div className="card">
+      <div className="card-icon">
+        <img src={icon} alt={`${title} icon`} />
+      </div>
+      <h2>{title}</h2>
+      <p>{content}</p>
+      <a href={linkHref}>{linkText}</a>
+    </div>
+  );
+};
 
 const CardData = () => {
+  const cardsData = [
+    {
+      title: 'Organize your content',
+      content: 'Backdrop CMS includes three pre-defined types of content: Pages, Posts, and Cards. Custom content types can also be added.',
+      linkText: 'Learn more about content types',
+      linkHref: '#',
+      icon: 'path/to/icon1.png' // Update with the correct path to the icon
+    },
+    {
+      title: 'What is a Card?',
+      content: 'A Card can only be seen as part of another page. Place them individually as "Existing content" Blocks, or grouped as in a View.',
+      linkText: 'Learn more about Cards',
+      linkHref: '#',
+      icon: 'path/to/icon2.png' // Update with the correct path to the icon
+    },
+    {
+      title: 'The Home page layout',
+      content: 'Use the home page layout to specifically customize this page. These Cards only appear on this layout.',
+      linkText: 'Learn more about the Home page',
+      linkHref: '#',
+      icon: 'path/to/icon3.png' // Update with the correct path to the icon
+    },
+    // Add more card data here
+  ];
+
   return (
-    <div className="app">
-      <div className="cards-container">
-        {cardsData.map((card, index) => (
-          <Card
-            key={index}
-            image={card.image}
-            title={card.title}
-            description={card.description}
-          />
-        ))}
-      </div>
+    <div className="card-list">
+      {cardsData.map((card, index) => (
+        <Card
+          key={index}
+          title={card.title}
+          content={card.content}
+          linkText={card.linkText}
+          linkHref={card.linkHref}
+          icon={card.icon}
+        />
+      ))}
     </div>
   );
 };

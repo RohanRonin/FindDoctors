@@ -1,114 +1,42 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-  }
-  
-  .App-header {
-    background-color: #ffe0e0;
-    padding: 20px 40px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff0000;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 500;
-  }
-  
-  .nav-actions {
-    display: flex;
-    align-items: center;
-  }
-  
-  .cart-button,
-  .login-button {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-left: 15px;
-    cursor: pointer;
-  }
-  
-  .cart-button {
-    background-color: #fff;
-    color: #000;
-  }
-  
-  .content {
-    padding: 50px 40px;
-    text-align: center;
-  }
-  
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-    margin: 20px 0;
-  }
-  
-  .hero h1 span {
-    color: #ff0000;
-  }
-  
-  .hero p {
-    font-size: 18px;
-    margin: 20px 0;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .order-button,
-  .reservation-button {
-    background-color: #ff0000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    margin: 0 10px;
-    cursor: pointer;
-  }
-  
-  .reservation-button {
-    background-color: #ffc0c0;
-    color: #ff0000;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-    border-radius: 15px;
-  }
-  
+.home-des{
+  margin-top: 300px;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.card-div{
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff; /* Adjust background color as needed */
+  margin-bottom: 20px;
+}
+
+.hero {
+  width: 100%;
+  background-color: #f5f5f5; /* Adjust background color as needed */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section-content {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff; /* Adjust background color as needed */
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.card-section {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #e0e0e0; /* Adjust background color as needed */
+}

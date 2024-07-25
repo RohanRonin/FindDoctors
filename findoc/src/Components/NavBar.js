@@ -8,11 +8,11 @@ function NavBar() {
         <div className="logo">FinDoc</div>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Doctor</a></li>
-          <li><a href="#about">Specialist</a></li>
-          <li><a href="#order">Hospital</a></li>
-          <li><a href="#reservation">Events</a></li>
-          <li><a href="#contact">About Us</a></li>
+          <li><a href="#doctor">Doctor</a></li>
+          <li><a href="#specialist">Specialist</a></li>
+          <li><a href="#hospital">Hospital</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about-us">About Us</a></li>
         </ul>
         <div className="nav-actions">
           <button className="location-button">📍</button>
