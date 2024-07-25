@@ -1,0 +1,72 @@
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.admin-login-box {
+  width: 350px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 60, 0.1);
+  text-align: center;
+}
+
+.admin-login-box img {
+  width: 150px;
+  margin-bottom: px;
+}
+
+.admin-login-title {
+  color:black;
+  font-size: 24px;
+  margin-bottom: px;
+}
+
+.admin-login-subtitle {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.admin-login-form {
+  display: flex;
+  flex-direction: column;
+}
+.user-lable{
+  font-size: 18px;
+ color: whitesmoke;
+ padding-bottom: 15px;
+}
+.pass-lable{
+ color: whitesmoke;
+ font-size: 18px;
+ padding-bottom: 15px;
+}
+
+.admin-login-input {
+  padding: 9px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.admin-login-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffcc00;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+.admin-login-button:hover {
+  background: #e6b800;
+}

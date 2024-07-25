@@ -1,0 +1,78 @@
+.main-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.button-container {
+  margin-bottom: 2rem;
+}
+/* src/Home.css */
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif; 
+  background: url('../Assert/BgLogin.png') no-repeat center center/cover;
+}
+
+.home-container {
+  text-align: center;
+  color: white;
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: white;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.button-container button {
+  margin: 0 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.view-container {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
