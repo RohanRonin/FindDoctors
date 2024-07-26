@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//import Description from './Components/Description';
 
 //import CardData from './Components/CardData';
 
@@ -13,6 +14,7 @@ root.render(
   </React.StrictMode>
 );
 
+//<Description />
 
 //< CardData />
 // If you want to start measuring performance in your app, pass a function

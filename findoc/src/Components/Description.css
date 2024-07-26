@@ -1,0 +1,67 @@
+/* Description.css */
+.description-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  .profile-info h1 {
+    margin: 0;
+  }
+  
+  .about {
+    padding: 20px;
+  }
+  
+  .about h2 {
+    margin-top: 0;
+  }
+  
+  .read-more {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .peers-more {
+    padding: 20px;
+  }
+  
+  .peers-more h2 {
+    margin-top: 0;
+  }
+  
+  .peers-list {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .peer {
+    text-align: center;
+  }
+  
+  .peer img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .peer p {
+    margin: 5px 0;
+  }
+  

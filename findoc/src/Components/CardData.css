@@ -1,39 +1,33 @@
-/* DoctorsCard.css */
-
 .card-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
+  gap: 40px; /* Adjust the gap between cards */
+}
+
+.section {
+  margin-bottom: 2rem; /* Adds space between sections */
+}
+
+.section h1 {
+  margin-bottom: 1rem; /* Adds space between the header and the card list */
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 300px;
-  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 1rem;
+  width: calc(23% - 1rem); /* Adjust the width of the card */
+  box-sizing: border-box;
+  margin-left: 75px;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .card-icon img {
-  max-width: 100px;
+  max-width: 100%;
   height: auto;
-}
-
-.card h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
-.card p {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-.card a {
-  color: #007bff;
-  text-decoration: none;
 }
