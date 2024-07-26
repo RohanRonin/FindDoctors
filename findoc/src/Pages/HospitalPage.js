@@ -1,33 +1,34 @@
 import React, { useState } from 'react';
-import SearchBar from '../Components/SearchBar';
-import './HospitalPage.css';
+import SearchBar from '../Components/SearchBar/SearchBar';
+import HospitalCard from '../Components/HospitalCards/HospitalCard';
+import hospitalData from '../Components/HospitalCards/hospitalData'
+import '../Pages/HospitalPage.css';
 
 const HospitalPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const hospitals = [
-    'General Hospital',
-    'City Hospital',
-    'Regional Medical Center',
-    'Community Health Clinic',
-    'St. Mary’s Hospital'
-  ];
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredHospitals = hospitals.filter(hospital =>
-    hospital.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredHospitals = hospitalData.filter(hospital =>
+    hospital.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="hospital-file">
+    <div className="hospital-page">
       <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
-      <ul>
+      <div className="hospital-list">
         {filteredHospitals.map((hospital, index) => (
-          <li key={index}>{hospital}</li>
+          <HospitalCard 
+            key={index}
+            name={hospital.name}
+            address={hospital.address}
+            specialty={hospital.specialty}
+            image={hospital.image}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

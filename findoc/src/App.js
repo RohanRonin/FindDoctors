@@ -1,35 +1,33 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AdminLogin from './Authentication/AdminLogin';
 import UserLogin from './Authentication/UserLogin';
-import Signup from './Authentication/Signup'; // Assume you have a Signup component
-import Main from './Authentication/MainPage'; // Assume you have a Home component
+import Signup from './Authentication/Signup';
 import HomePage from './Pages/HomePage';
-import NavBar from './Components/NavBar';
 import HospitalPage from './Pages/HospitalPage';
 import SpecialistPage from './Pages/SpecialistPage';
+import MainLayout from '../src/Pages/MainLayout';
+import MainPage from './Authentication/MainPage'
+import './App.css';
+import DoctorPage from './Pages/DoctorPage';
 
 const App = () => {
   return (
     <div className="App">
-    <Router>
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/admin-login" element={<AdminLogin />} />
-        <Route path="/user-login" element={<UserLogin />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/HomePage" element={<HomePage />}/>
-        <Route path="/NavBar" element={<NavBar />}/>
-        <Route path="/hospital" element={<HospitalPage />} />
-        <Route path="/specialist" element={<SpecialistPage />} />
-        
+      <Router>
+        <Routes>
+        <Route path="/" element={<MainPage />} />
+          <Route path="Mainp" element={<MainLayout><HomePage /></MainLayout>} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/user-login" element={<UserLogin />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/hospital" element={<MainLayout><HospitalPage /></MainLayout>} />
+          <Route path="/specialist" element={<MainLayout><SpecialistPage /></MainLayout>} />
+          <Route path="/specialist" element={<MainLayout><DoctorPage /></MainLayout>} />
         </Routes>
-        </Router>
-        </div>
-      );
-    };
-    
-    export default App;
-/*
-*/
+      </Router>
+    </div>
+  );
+};
+
+export default App;

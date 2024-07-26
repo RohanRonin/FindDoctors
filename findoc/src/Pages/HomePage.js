@@ -1,15 +1,15 @@
 import React from 'react';
 import './HomePage.css';  
-import introImage from '../Assert/Main.png'; // Adjust the path if your file structure is different
+import introImage from '../Assert/MainImage.png'; // Adjust the path if your file structure is different
 
 function HomePage() {
   return (
     <div className="home-des">
       <div className="intro-section">
         <div className="intro-text">
-          <h2><span style={{ color: 'red' }}>Welcome to our </span></h2>
-          <h1>FinDoc Application,</h1>
-          <p>your go-to resource for finding qualified and trusted medical professionals in your area.</p>
+          <h2><span style={{ color: 'red' }}>Welcome to FinDoc</span></h2>
+          <h1>Your Health, Your Location, Your Choice</h1>
+          <p>At FinDoc, we believe in making healthcare accessible and convenient for everyone. Whether you're new in town, traveling, or just need to find the best medical facilities near you, FinDoc is here to help.</p>
         </div>
         <div className="intro-image">
           <img src={introImage} alt="Intro" />

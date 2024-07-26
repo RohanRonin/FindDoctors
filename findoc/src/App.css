@@ -1,11 +1,12 @@
 
-  /* index.css or App.css */
-body {
-  background: linear-gradient(90deg, #4e54c8, #8f94fb);
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+/* index.css or App.css
+*/
+  body {
+    background-color: #ffe0e0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
