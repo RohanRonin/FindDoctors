@@ -8,6 +8,7 @@ import Main from './Authentication/MainPage'; // Assume you have a Home componen
 import HomePage from './Pages/HomePage';
 import NavBar from './Components/NavBar';
 import HospitalPage from './Pages/HospitalPage';
+import SpecialistPage from './Pages/SpecialistPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/HomePage" element={<HomePage />}/>
         <Route path="/NavBar" element={<NavBar />}/>
         <Route path="/hospital" element={<HospitalPage />} />
+        <Route path="/specialist" element={<SpecialistPage />} />
         
         </Routes>
         </Router>
