@@ -1,7 +1,6 @@
 import React from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
-import HomePage from '../Pages/HomePage';
 
 function NavBar() {
   return (
@@ -12,9 +11,9 @@ function NavBar() {
           <li><a href="#home">Home</a></li>
           <li><a href="#doctor">Doctor</a></li>
           <li><a href="#specialist">Specialist</a></li>
-          <Link to='./HospitalPage'>
-          <li><a href="#hospital">Hospital</a></li>
-          </Link>
+          <li>
+            <Link to="/hospital" className="nav-link">Hospital</Link>
+          </li>
           <li><a href="#events">Events</a></li>
           <li><a href="#about-us">About Us</a></li>
         </ul>
@@ -23,7 +22,6 @@ function NavBar() {
           <button className="login-button">Log in</button>
         </div>
       </nav>
-      <HomePage />
     </header>
   );
 }

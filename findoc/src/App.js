@@ -6,8 +6,8 @@ import UserLogin from './Authentication/UserLogin';
 import Signup from './Authentication/Signup'; // Assume you have a Signup component
 import Main from './Authentication/MainPage'; // Assume you have a Home component
 import HomePage from './Pages/HomePage';
-import HospitalPage from './Pages/HospitalPage';
 import NavBar from './Components/NavBar';
+import HospitalPage from './Pages/HospitalPage';
 
 const App = () => {
   return (
@@ -19,8 +19,9 @@ const App = () => {
         <Route path="/user-login" element={<UserLogin />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/HomePage" element={<HomePage />}/>
-        <Route path="/HodpitalPage" element={<HospitalPage />}/>
         <Route path="/NavBar" element={<NavBar />}/>
+        <Route path="/hospital" element={<HospitalPage />} />
+        
         </Routes>
         </Router>
         </div>
