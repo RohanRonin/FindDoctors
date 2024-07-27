@@ -1,0 +1,10 @@
+.doctor-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

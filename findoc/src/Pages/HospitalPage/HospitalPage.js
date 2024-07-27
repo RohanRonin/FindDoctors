@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import SearchBar from '../Components/SearchBar/SearchBar';
-import HospitalCard from '../Components/HospitalCards/HospitalCard';
-import hospitalData from '../Components/HospitalCards/hospitalData'
-import '../Pages/HospitalPage.css';
+import SearchBar from '../../Components/SearchBar/SearchBar';
+import HospitalCard from '../../Components/HospitalCards/HospitalCard';
+import hospitalData from '../../Components/HospitalCards/hospitalData'
+import './HospitalPage.css';
 
 const HospitalPage = () => {
   const [searchTerm, setSearchTerm] = useState('');

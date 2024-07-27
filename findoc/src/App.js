@@ -4,12 +4,12 @@ import AdminLogin from './Authentication/AdminLogin';
 import UserLogin from './Authentication/UserLogin';
 import Signup from './Authentication/Signup';
 import HomePage from './Pages/HomePage';
-import HospitalPage from './Pages/HospitalPage';
-import SpecialistPage from './Pages/SpecialistPage';
+import HospitalPage from './Pages/HospitalPage/HospitalPage';
+import SpecialistPage from './Pages/SpecialistPage/SpecialistPage';
 import MainLayout from '../src/Pages/MainLayout';
 import MainPage from './Authentication/MainPage'
 import './App.css';
-import DoctorPage from './Pages/DoctorPage';
+import DoctorPage from './Pages/DoctorPage/DoctorPage';
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/hospital" element={<MainLayout><HospitalPage /></MainLayout>} />
           <Route path="/specialist" element={<MainLayout><SpecialistPage /></MainLayout>} />
-          <Route path="/specialist" element={<MainLayout><DoctorPage /></MainLayout>} />
+          <Route path="/doctor" element={<MainLayout><DoctorPage /></MainLayout>} />
         </Routes>
       </Router>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import SearchBar from '../Components/SearchBar/SearchBar';
-import DoctorCard from '../Components/DoctorCards/DoctorCard';
-import doctorData from '../Components/DoctorCards/doctorData';  // Adjust the path as necessary
 import './DoctorPage.css';
+import SearchBar from '../../Components/SearchBar/SearchBar';
+import doctorData from '../../Components/DoctorCards/doctorData';
+import DoctorCard from '../../Components/DoctorCards/DoctorCard';
 
 const DoctorPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -18,13 +18,14 @@ const DoctorPage = () => {
   return (
     <div className="doctor-page">
       <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
+      <h2>Our Doctors</h2>
       <div className="doctor-list">
         {filteredDoctors.map((doctor, index) => (
-          <DoctorCard 
+          <DoctorCard
             key={index}
             name={doctor.name}
             specialty={doctor.specialty}
-            address={doctor.address}
+            hospital={doctor.hospital}
             image={doctor.image}
           />
         ))}

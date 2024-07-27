@@ -8,16 +8,10 @@ function NavBar() {
       <nav className="navbar">
         <div className="logo">FinDoc</div>
         <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-          <li>
-            <Link to="/doctor" className="nav-link">Doctor</Link>
-          </li>
-          <li>
-            <Link to="/specialist" className="nav-link">Specialist</Link>
-          </li>
-          <li>
-            <Link to="/hospital" className="nav-link">Hospital</Link>
-          </li>
+          <li><Link to="/home" className="nav-link">Home</Link></li>
+          <li><Link to="/doctor" className="nav-link">Doctor</Link></li>
+          <li><Link to="/specialist" className="nav-link">Specialist</Link></li>
+          <li><Link to="/hospital" className="nav-link">Hospital</Link></li>
           <li><a href="#events">Events</a></li>
           <li><a href="#about-us">About Us</a></li>
         </ul>
