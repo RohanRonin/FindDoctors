@@ -1,48 +1,19 @@
 .specialist-page {
-  padding: 20px;
-  text-align: center;
+  padding-top: 100px; /* To avoid content hiding behind fixed NavBar */
 }
 
-.specialty-list {
+.specialist-search-container {
+  margin-top: 20px;
+  max-width: 600px; /* Adjusted max-width to make the search bar bigger */
+  margin: 0 auto;
+}
+
+.specialist-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column; /* Display cards in a row */
+  gap: 1rem;
+  padding: 1rem;
+  max-width: 1200px; /* Adjust width as needed */
+  margin: 0 auto;
 }
 
-.specialty-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  width: 200px;
-  margin: 16px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.specialty-card .card-image img {
-  width: 100%;
-  height: auto;
-}
-
-.specialty-card .card-content {
-  padding: 16px;
-  text-align: center;
-}
-
-.specialty-card .card-content h3 {
-  margin: 0;
-  font-size: 1.2em;
-}
-
-.doctor-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-button {
-  margin: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}

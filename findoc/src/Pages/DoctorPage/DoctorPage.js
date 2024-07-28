@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import './DoctorPage.css';
+import NavBar from '../../Components/NavBar/NavBar';
 import SearchBar from '../../Components/SearchBar/SearchBar';
-import doctorData from '../../Components/DoctorCards/doctorData';
-import DoctorCard from '../../Components/DoctorCards/DoctorCard';
+import './DoctorPage.css';
 
 const DoctorPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -11,24 +10,17 @@ const DoctorPage = () => {
     setSearchTerm(event.target.value);
   };
 
-  const filteredDoctors = doctorData.filter(doctor =>
-    doctor.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
     <div className="doctor-page">
-      <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
-      <h2>Our Doctors</h2>
-      <div className="doctor-list">
-        {filteredDoctors.map((doctor, index) => (
-          <DoctorCard
-            key={index}
-            name={doctor.name}
-            specialty={doctor.specialty}
-            hospital={doctor.hospital}
-            image={doctor.image}
-          />
-        ))}
+      <NavBar />
+      <div className="doctor-search-container">
+      <center>
+        <SearchBar 
+          searchTerm={searchTerm} 
+          handleSearchChange={handleSearchChange} 
+          placeholder="Search for doctors..." 
+        />
+        </center>
       </div>
     </div>
   );

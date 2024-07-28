@@ -1,0 +1,11 @@
+.aboutus-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    margin-top: 60px; /* Adjust this to avoid content hiding behind fixed NavBar */
+    padding-top: 20px; /* Adjust as needed for spacing */
+    padding: 20px;
+  }
+  

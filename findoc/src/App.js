@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AdminLogin from './Authentication/AdminLogin';
 import UserLogin from './Authentication/UserLogin';
 import Signup from './Authentication/Signup';
-import HomePage from './Pages/HomePage';
+import HomePage from './Pages/HomePage/HomePage';
 import HospitalPage from './Pages/HospitalPage/HospitalPage';
 import SpecialistPage from './Pages/SpecialistPage/SpecialistPage';
 import MainLayout from '../src/Pages/MainLayout';
 import MainPage from './Authentication/MainPage'
 import './App.css';
 import DoctorPage from './Pages/DoctorPage/DoctorPage';
+import AboutUsPage from './Pages/AboutPage/AboutUsPage';
+import EventPage from './Pages/EventPage';
 
 const App = () => {
   return (
@@ -24,6 +26,11 @@ const App = () => {
           <Route path="/hospital" element={<MainLayout><HospitalPage /></MainLayout>} />
           <Route path="/specialist" element={<MainLayout><SpecialistPage /></MainLayout>} />
           <Route path="/doctor" element={<MainLayout><DoctorPage /></MainLayout>} />
+          <Route path="/about-us" element={<MainLayout><AboutUsPage /></MainLayout>} />
+          <Route path="/events" element={<MainLayout><EventPage /></MainLayout>} />
+
+          <Route path="/Login" element={<UserLogin />}/>
+          
         </Routes>
       </Router>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import introImage from '../Assert/MainImage.png'; // Adjust the path if your file structure is different
+import introImage from '../../Assert/MainImage.png'; // Adjust the path if your file structure is different
 import './HomePage.css';  
 
 function HomePage() {

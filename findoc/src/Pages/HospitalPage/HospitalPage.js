@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import NavBar from '../../Components/NavBar/NavBar';
 import SearchBar from '../../Components/SearchBar/SearchBar';
 import HospitalCard from '../../Components/HospitalCards/HospitalCard';
-import hospitalData from '../../Components/HospitalCards/hospitalData'
+import hospitalData from '../../Components/HospitalCards/hospitalData'; // Ensure you have hospital data
 import './HospitalPage.css';
 
 const HospitalPage = () => {
@@ -17,7 +18,14 @@ const HospitalPage = () => {
 
   return (
     <div className="hospital-page">
-      <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
+      <NavBar />
+      <div className="hospital-search-container">
+        <SearchBar 
+          searchTerm={searchTerm} 
+          handleSearchChange={handleSearchChange} 
+          placeholder="Search for hospitals..." 
+        />
+      </div>
       <div className="hospital-list">
         {filteredHospitals.map((hospital, index) => (
           <HospitalCard 

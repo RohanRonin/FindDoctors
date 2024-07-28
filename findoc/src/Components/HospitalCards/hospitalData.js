@@ -1,4 +1,3 @@
-import './hospitalData.css';
 const hospitalData = [
     {
       name: 'City Hospital',
@@ -36,6 +35,7 @@ const hospitalData = [
         specialty: 'Orthopedics',
         image: 'path/to/hospital5.jpg'
       }
+      
   ];
   
   export default hospitalData;

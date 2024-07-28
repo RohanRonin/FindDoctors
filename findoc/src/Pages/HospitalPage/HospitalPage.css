@@ -1,29 +1,17 @@
-.hospital-file {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-  }
+.hospital-page {
+  padding-top: 100px; /* To avoid content hiding behind fixed NavBar */
+}
+
+.hospital-search-container {
+  margin-bottom: 40px;
+  margin-left: 500px;
   
-  .hospital-file ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .hospital-file li {
-    padding: 10px;
-    font-size: 18px;
-  }
-  .hospital-page {
-    padding: 20px;
-  }
-  
-  .hospital-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
+  max-width: 250px;
+}
+
+.hospital-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}

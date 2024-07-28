@@ -6,10 +6,16 @@ import DoctorCard from '../../Components/DoctorCards/DoctorCard';
 import SpecialtyCard from '../../Components/SpecialistCard/SpecialistCard';
 
 const specialties = [
-  { name: 'Cardiology', image: 'path/to/cardiology.jpg' },
-  { name: 'Pediatrics', image: 'path/to/pediatrics.jpg' },
-  { name: 'Orthopedics', image: 'path/to/orthopedics.jpg' },
-  { name: 'Emergency Medicine', image: 'path/to/emergency.jpg' },
+  { name: 'Cardiology', image: require('../../Assert/cardio.jpg') },
+  { name: 'Neurologists', image: require('../../Assert/Neuro.jpg') },
+  { name: 'Orthopedics', image: require('../../Assert/ortho.jpeg') },
+  { name: 'Nephrologists', image: require('../../Assert/Nephro.jpg') },
+  { name: 'Dermatology', image: require('../../Assert/Derm.jpeg') },
+  { name: 'Pediatrics', image: require('../../Assert/Pedi.jpg') },
+  { name: 'Oncology', image: require('../../Assert/Onco.webp') },
+  { name: 'Psychiatry', image: require('../../Assert/Psyc.jpg') },
+  { name: 'Gastroenterology', image: require('../../Assert/Gastro.jpg') },
+  { name: 'Endocrinology', image: require('../../Assert/Endo.jpg') },
   // Add more specialties as needed
 ];
 
@@ -32,8 +38,10 @@ const SpecialistPage = () => {
 
   return (
     <div className="specialist-page">
+    <div className='specialistm'>
       <SearchBar searchTerm={searchTerm} handleSearchChange={handleSearchChange} />
-      <h2>Specialties</h2>
+      </div>
+
       {selectedSpecialty === '' ? (
         <div className="specialty-list">
           {specialties.map((specialty, index) => (
