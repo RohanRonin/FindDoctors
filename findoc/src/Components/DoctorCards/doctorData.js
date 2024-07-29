@@ -22,6 +22,18 @@ const doctorData = [
     specialty: 'Emergency Medicine',
     hospital: 'General Hospital',
     image: 'path/to/doctor4.jpg'
+  },
+  {
+    name: 'Dr. John Doe',
+    specialty: 'Cardiology',
+    hospital: 'Green Valley Hospital',
+    image: 'path/to/doctor1.jpg'  // Adjust the path to your images
+  },
+  {
+    name: 'Dr. Emily Clark',
+    specialty: 'Emergency Medicine',
+    hospital: 'General Hospital',
+    image: 'path/to/doctor4.jpg'
   }
 ];
 

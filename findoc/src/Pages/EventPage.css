@@ -1,13 +1,43 @@
 .event-page {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.slide-show-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-height: 50vh;
+}
+
+.slide-show-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .content {
-  margin-top: 60px; /* Adjust this to avoid content hiding behind fixed NavBar */
-  padding-top: 20px; /* Adjust as needed for spacing */
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.event-search-container {
-  margin: 20px auto;
+.content h1 {
+  font-size: 2rem;
+  color: var(--midnight-green);
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: var(--eerie-black);
+  line-height: 1.5;
 }

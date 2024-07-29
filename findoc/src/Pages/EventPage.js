@@ -1,29 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import SearchBar from '../Components/SearchBar/SearchBar';
-import './EventPage.css';
 import NavBar from '../Components/NavBar/NavBar';
+import './EventPage.css';
+
+import image1 from '../Assert/Onco.webp';
+import image2 from '../Assert/logo.png';
+import image3 from '../Assert/logo.png';
+
+const images = [image1, image2, image3];
 
 const EventPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="event-page">
       <NavBar />
+      <div className="slide-show-container">
+        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+      </div>
       <div className="content">
-        <div className="event-search-container">
-          <SearchBar 
-            searchTerm={searchTerm} 
-            handleSearchChange={handleSearchChange} 
-            placeholder="Search for events..." 
-          />
-        </div>
-        <h1>Events</h1>
-        <p>This is the Events page. You can list all the upcoming and past events here.</p>
+        <h1>Upcoming and Past Events</h1>
+        <p>Explore all the upcoming and past events here. Stay informed about health fairs, awareness campaigns, seminars, and more.</p>
       </div>
     </div>
   );

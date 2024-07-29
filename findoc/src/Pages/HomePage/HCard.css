@@ -1,0 +1,39 @@
+.hospital-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+  }
+  
+  .hospital-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--midnight-green);
+  }
+  
+  .hospital-card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .hospital-card {
+    background-color: var(--white);
+    border-radius: var(--radius-12);
+    padding: 10px; /* Reduce padding to make the card smaller */
+    box-shadow: 0 4px 10px rgba(10, 10, 60, 0.1);
+    flex: 1;
+    text-align: center;
+  }
+  
+  .hospital-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .hospital-card p {
+    font-size: 1rem;
+    color: var(--eerie-black);
+  }
+  

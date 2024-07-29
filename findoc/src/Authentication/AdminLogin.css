@@ -1,140 +1,88 @@
-.admin-login-container {
+.admin-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  
+
 }
 
-.admin-login-box {
-  width: 350px;
-  padding: 40px;
-  background: white;
-  border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 10, 0.1);
+.admin-box {
+  width: 320px;
+  padding: 30px;
   text-align: center;
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.admin-login-box img {
-  width: 150px;
-  margin-bottom: px;
+.admin-title {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  color: #333;
 }
 
-.admin-login-title {
-  color:black;
-  font-size: 24px;
-  margin-bottom: px;
-}
-
-.admin-login-subtitle {
-  color: #ccc;/* AdminLogin.css */
-
-  .admin-login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e0e0e0; /* Adjust background color as needed */
-  }
-  
-  .admin-login-box {
-    width: 320px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    background-color: #ffffff;
-    text-align: center;
-  }
-  
-  .admin-login-box img {
-    width: 120px;
-    margin-bottom: 25px;
-  }
-  
-  .admin-login-title {
-    font-size: 26px;
-    margin-bottom: 15px;
-  }
-  
-  .admin-login-subtitle {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 25px;
-  }
-  
-  .admin-login-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .admin-user-label,
-  .admin-pass-label {
-    font-size: 15px;
-    margin-bottom: 7px;
-    text-align: left;
-  }
-  
-  .admin-login-input {
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
-  }
-  
-  .admin-login-button {
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #28a745;
-    color: #ffffff;
-    font-size: 17px;
-    cursor: pointer;
-  }
-  
-  .admin-login-button:hover {
-    background-color: #218838;
-  }
-  
-  font-size: 14px;
+.admin-subtitle {
   margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #777;
 }
 
-.admin-login-form {
+.admin-form {
   display: flex;
   flex-direction: column;
-}
-.user-lable{
-  font-size: 18px;
- color: whitesmoke;
- padding-bottom: 15px;
-}
-.pass-lable{
- color: whitesmoke;
- font-size: 18px;
- padding-bottom: 15px;
+  align-items: center;
 }
 
-.admin-login-input {
-  padding: 9px;
-  margin-bottom: 25px;
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s;
 }
 
-.admin-login-button {
-  padding: 10px;
+.admin-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 5px;
-  background: #ffcc00;
-  color: black;
-  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
-  margin-top: 20px;
+  font-size: 1.2em;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.admin-login-button:hover {
-  background: #e6b800;
+.admin-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: #007bff;
+  }
+}
+
+.admin-input:focus {
+  animation: blink 1s infinite;
 }
