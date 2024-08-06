@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.css';
 import { Link } from 'react-router-dom';
+import Select from '@mui/material/Select';
+import MenuItem from '@mui/material/MenuItem';
 
-function NavBar() {
+const NavBar = () => {
+  const [location, setLocation] = useState('');
+
+  const handleLocationChange = (event) => {
+    setLocation(event.target.value);
+  };
+
   return (
     <header className="-header">
       <nav className="navbar">
@@ -16,14 +24,28 @@ function NavBar() {
           <li><a href="/about-us" className="nav-link">About Us</a></li>
         </ul>
         <div className="nav-actions">
-          <button className="location-button">📍</button>
+          <Select
+            value={location}
+            onChange={handleLocationChange}
+            displayEmpty
+            inputProps={{ 'aria-label': 'Select Location' }}
+            style={{ color: 'black', marginRight: '16px' }} // Adjust styles as needed
+          >
+            <MenuItem value="" disabled>
+              Select Location
+            </MenuItem>
+            <MenuItem value="Location1">Location1</MenuItem>
+            <MenuItem value="Location2">Location2</MenuItem>
+            <MenuItem value="Location3">Location3</MenuItem>
+            {/* Add more locations as needed */}
+          </Select>
           <Link to="/login">
+            <button className="login-button">Log in</button>
           </Link>
-          <button className="login-button">Log in</button>
         </div>
       </nav>
     </header>
   );
-}
+};
 
 export default NavBar;

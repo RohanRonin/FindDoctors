@@ -12,7 +12,7 @@ const UserLogin = () => {
         <p className="login-subtitle">Login to your account</p>
         <form className="login-form">
           <label className="user-label">Username</label>
-          <input type="text" className="login-input" placeholder="Username" />
+          <input type="text" className="login-intput" placeholder="Username" />
           <label className="pass-label">Password</label>
           <input type="password" className="login-input" placeholder="Password" />
           <Link to="/Mainp">

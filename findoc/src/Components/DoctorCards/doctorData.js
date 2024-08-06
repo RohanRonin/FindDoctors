@@ -1,40 +1,36 @@
+import john from '../../Assert/Docakka.png';
+
 const doctorData = [
   {
     name: 'Dr. John Doe',
-    specialty: 'Cardiology',
-    hospital: 'Green Valley Hospital',
-    image: 'path/to/doctor1.jpg'  // Adjust the path to your images
+    image: john,
+    specialty: 'Cardiology'
   },
   {
     name: 'Dr. Jane Smith',
-    specialty: 'Pediatrics',
-    hospital: 'Sunrise Health Center',
-    image: 'path/to/doctor2.jpg'
+    image: john,
+    specialty: 'Neurology'
   },
   {
     name: 'Dr. Richard Roe',
-    specialty: 'Orthopedics',
-    hospital: 'St. Mary’s Hospital',
-    image: 'path/to/doctor3.jpg'
+    image: john,
+    specialty: 'Orthopedics'
   },
   {
     name: 'Dr. Emily Clark',
-    specialty: 'Emergency Medicine',
-    hospital: 'General Hospital',
-    image: 'path/to/doctor4.jpg'
+    image: john,
+    specialty: 'Pediatrics'
   },
   {
     name: 'Dr. John Doe',
-    specialty: 'Cardiology',
-    hospital: 'Green Valley Hospital',
-    image: 'path/to/doctor1.jpg'  // Adjust the path to your images
+    image: john,
+    specialty: 'Cardiology'
   },
   {
     name: 'Dr. Emily Clark',
-    specialty: 'Emergency Medicine',
-    hospital: 'General Hospital',
-    image: 'path/to/doctor4.jpg'
-  }
+    image: john,
+    specialty: 'Pediatrics'
+  },
 ];
 
 export default doctorData;

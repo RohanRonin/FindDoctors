@@ -1,32 +1,17 @@
-import React, { useState } from 'react';
-import NavBar from '../../Components/NavBar/NavBar';
-import SearchBar from '../../Components/SearchBar/SearchBar';
-import DoctorCard from '../../Components/DoctorCards/DoctorCard';
-import doctorData from '../../Components/DoctorCards/doctorData'; 
-import './DoctorPage.css';
+import React from "react";
+import DoctorCard from "../../Components/SpecialistCard/SpecialistDoctorCard";
+import doctorData from "../../Components/DoctorCards/doctorData";
+import "./DoctorPage.css";
 
 const DoctorPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
   return (
     <div className="doctor-page">
-      <NavBar />
       <div className="doctor-search-container">
-        <center>
-          <SearchBar 
-            searchTerm={searchTerm} 
-            handleSearchChange={handleSearchChange} 
-            placeholder="Search for doctors..." 
-          />
-        </center>
+        <center></center>
       </div>
       <div className="doctor-cards-container">
         {doctorData.map((doctor, index) => (
-          <DoctorCard 
+          <DoctorCard
             key={index}
             name={doctor.name}
             specialty={doctor.specialty}

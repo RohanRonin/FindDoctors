@@ -1,19 +1,31 @@
-import React from 'react';
-import './HospitalCard.css';
+import React from "react";
+import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
+import "./HospitalCard.css";
 
-const HospitalCard = ({ name, address, specialty, image }) => {
+const HospitalCard = (item) => {
+  const navigate = useNavigate();
+
+  const handleCardClick = () => {
+    navigate(`/hospital/${item.id}`);
+  };
+
   return (
-    <div className="hospital-card">
-      <div className="card-image">
-        <img src={image} alt={name} />
-      </div>
-      <div className="card-content">
-        <h3>{name}</h3>
-        <p><strong>Address:</strong> {address}</p>
-        <p><strong>Specialty:</strong> {specialty}</p>
+    <div className="hospital-card" onClick={handleCardClick}>
+      <img src={item.image} alt="error" className="hospital-image" />
+      <div className="hospital-info">
+        <h2>{item.name}</h2>
+        <p>{item.address}</p>
       </div>
     </div>
   );
+};
+
+HospitalCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default HospitalCard;

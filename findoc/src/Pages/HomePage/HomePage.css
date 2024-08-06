@@ -1,8 +1,9 @@
+/* HomePage.css */
 .home-des {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  margin-top: 900px;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 4px 10px rgba(10, 10, 60, 0.1);
@@ -47,4 +48,41 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.top-rated-section {
+  padding: 40px 80px;
+  text-align: center;
+}
+
+.top-rated-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hospital-cards-container,
+.doctor-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .intro-text,
+  .intro-image {
+    flex: none;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .top-rated-section {
+    padding: 20px;
+  }
 }

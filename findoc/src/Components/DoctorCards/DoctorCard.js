@@ -1,18 +1,17 @@
-import React from 'react';
-import './DoctorCard.css';
-
-const DoctorCard = ({ name, specialty, hospital, image }) => {
+// DoctorCard.js
+import React from "react";
+import { Link } from "react-router-dom";
+import "./DoctorCard.css";
+const DoctorCard = ({ id, name, specialty, location, image }) => {
   return (
-    <div className="doctor-card">
-      <div className="card-image">
-        <img src={image} alt={name} />
+    <Link to={`/doctor/${id}`} className="doctor-card-link">
+      <div className="doctor-card">
+        <img src={image} alt={name} className="doctor-card-image" />
+        <h2>{name}</h2>
+        <p>Specialty: {specialty}</p>
+        <p>Location: {location}</p>
       </div>
-      <div className="card-content">
-        <h3>{name}</h3>
-        <p><strong>Specialty:</strong> {specialty}</p>
-        <p><strong>Hospital:</strong> {hospital}</p>
-      </div>
-    </div>
+    </Link>
   );
 };
 

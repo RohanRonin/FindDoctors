@@ -1,0 +1,49 @@
+/* src/Home.css */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e4674;
+    color: white;
+    padding: 100px 50px;
+  }
+  
+  .intro {
+    max-width: 50%;
+  }
+  
+  .intro h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .intro p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .intro-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .btn-get-started {
+    background-color: #3f8af1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  
+  .intro-image img {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+  }
+  

@@ -7,19 +7,21 @@ import HomePage from './Pages/HomePage/HomePage';
 import HospitalPage from './Pages/HospitalPage/HospitalPage';
 import SpecialistPage from './Pages/SpecialistPage/SpecialistPage';
 import MainLayout from '../src/Pages/MainLayout';
-import MainPage from './Authentication/MainPage'
+import MainPage from './Authentication/MainPage';
 import './App.css';
 import DoctorPage from './Pages/DoctorPage/DoctorPage';
 import AboutUsPage from './Pages/AboutPage/AboutUsPage';
-import EventPage from './Pages/EventPage';
+import EventPage from './Pages/EventPage/EventPage';
+import LandingPage from './Pages/LandingPage/LandingPage';
 
 const App = () => {
   return (
     <div className="App">
       <Router>
         <Routes>
-        <Route path="/" element={<MainPage />} />
-          <Route path="Mainp" element={<MainLayout><HomePage /></MainLayout>} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/main-page" element={<MainPage />} />
+          <Route path="/mainp" element={<MainLayout><HomePage /></MainLayout>} />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="/user-login" element={<UserLogin />} />
           <Route path="/signup" element={<Signup />} />
@@ -28,9 +30,7 @@ const App = () => {
           <Route path="/doctor" element={<MainLayout><DoctorPage /></MainLayout>} />
           <Route path="/about-us" element={<MainLayout><AboutUsPage /></MainLayout>} />
           <Route path="/events" element={<MainLayout><EventPage /></MainLayout>} />
-
-          <Route path="/Login" element={<UserLogin />}/>
-          
+          <Route path="/login" element={<UserLogin />} />
         </Routes>
       </Router>
     </div>
