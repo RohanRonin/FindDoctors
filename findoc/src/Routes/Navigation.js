@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DefaultAuth from "../Page/Authentication/DefaultAuth";
-import AdminLogin from "../Page/Authentication/AdminLogin";
-import UserAuth from "../Page/Authentication/UserAuth";
+import DefaultAuth from "../Authentication/DefaultAuth";
+import AdminLogin from "../Authentication/AdminLogin";
+import UserAuth from "../Authentication/UserLogin";
 import Home from "../Page/Home";
 import Hospital from "../Page/Hospital";
 import Doctors from "../Page/Doctors";
@@ -14,6 +14,7 @@ import HospitalDetail from "../Page/HospitalDetail";
 import DoctorDetail from "../Page/DoctorDetail";
 import LandingPage from "../Page/Landingpage/LandingPage";
 import DoctorPage from "../Page/DoctorPage";
+import AboutUs from "../Page/AboutUs";
 function Navigation() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -47,6 +48,7 @@ function Navigation() {
         <Route path="/hospital/:id" element={<HospitalDetail />} />
         <Route path="/doctor/:id" element={<DoctorDetail />} />
         <Route path="/special/:id" element={<DoctorPage />} />
+        <Route path="/aboutus/:id" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   );
