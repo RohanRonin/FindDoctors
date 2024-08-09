@@ -15,6 +15,7 @@ import DoctorDetail from "../Page/DoctorDetail";
 import LandingPage from "../Page/Landingpage/LandingPage";
 import DoctorPage from "../Page/DoctorPage";
 import AboutUs from "../Page/AboutUs";
+import Dashboard from "../Page/Admin/DashBoard";
 function Navigation() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -49,6 +50,8 @@ function Navigation() {
         <Route path="/doctor/:id" element={<DoctorDetail />} />
         <Route path="/special/:id" element={<DoctorPage />} />
         <Route path="/aboutus/:id" element={<AboutUs />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        
       </Routes>
     </BrowserRouter>
   );

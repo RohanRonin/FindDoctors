@@ -75,7 +75,7 @@ const AdminLogin = ({ setIsAuthenticated }) => {
             </label>
             {errors.password && <p className="form-error">{errors.password}</p>}
           </div>
-          <button type="submit" className="form-button">Login</button>
+          <button type="submit" className="form-button"  onClick={() => navigate("/dashboard")}>Login</button>
         </form>
       </div>
     </div>
