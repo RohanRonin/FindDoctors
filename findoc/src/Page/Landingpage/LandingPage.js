@@ -1,9 +1,9 @@
 import React from "react";
 import Hero from "./Lhero";
 import Feature from "../Landingpage/Feature";
-import OurDoctors from "./Ourdoctors";
-import Review from "../Landingpage/Review";
+import OurDoctors from "./MedicalServices";
 import NavBar from "../Landingpage/Lnavbar";
+import ProcessSteps from "./ProcessSteps";
 const LandingPage = () => {
   return (
     <>
@@ -11,7 +11,7 @@ const LandingPage = () => {
       <Hero />
       <OurDoctors />
       <Feature />
-      <Review />
+      <ProcessSteps />
     </>
   );
 };

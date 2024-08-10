@@ -1,32 +1,29 @@
-// NewsPage.js
-
 import React from 'react';
 import './NewsCard.css';
 
 const newsArticles = [
   {
     image: 'https://graph.org/file/40e4a1407d30d3e51295a.jpg',
-    title: 'Medical Breakthrough in Cancer Treatment',
+    title: 'Groundbreaking Gene Therapy for Rare Diseases',
     date: 'August 6, 2024',
     author: 'medicalnews_admin',
-    description: 'Scientists have made a significant breakthrough in cancer treatment by developing a new therapy that targets cancer cells more effectively.',
+    description: 'Researchers have developed a new gene therapy that shows promise in treating rare genetic disorders, offering hope to patients worldwide.',
     link: '#',
   },
   {
     image: 'https://graph.org/file/40e4a1407d30d3e51295a.jpg',
-    title: 'New Vaccine Shows Promise Against Malaria',
+    title: 'New AI Tool Revolutionizes Medical Diagnostics',
     date: 'August 5, 2024',
     author: 'medicalnews_admin',
-    description: 'A new vaccine has shown promise in the fight against malaria, providing high levels of protection in clinical trials.',
+    description: 'A cutting-edge AI tool is now being used in hospitals to diagnose diseases faster and more accurately, potentially saving countless lives.',
     link: '#',
   },
-  
   {
     image: 'https://graph.org/file/40e4a1407d30d3e51295a.jpg',
-    title: 'Advancements in Alzheimer’s Research',
+    title: 'Advances in Personalized Medicine for Cancer Patients',
     date: 'August 4, 2024',
     author: 'medicalnews_admin',
-    description: 'Researchers have made advancements in understanding Alzheimer’s disease, paving the way for new treatments.',
+    description: 'Personalized medicine is taking a leap forward, with new treatments being tailored to the genetic makeup of individual cancer patients.',
     link: '#',
   }
 ];

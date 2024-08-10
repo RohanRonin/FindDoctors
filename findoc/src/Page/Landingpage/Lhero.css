@@ -1,9 +1,72 @@
-.Lbtn{
-    width: 150px;
-    height: 45px;
-    background-color: rgb(148, 51, 238);
-    color: aliceblue;
-    border-color:rgb(148, 60, 231);
+.hero-section {
+    background-color: #0b1236;
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.text-container {
+    max-width: 600px;
+}
+
+.text-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.text-container h2 span {
+    color: #e74c3c;
+}
+
+.text-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.explore-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
-    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* background-image: url('background-shape.png'); /* Add any shape or background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
 }

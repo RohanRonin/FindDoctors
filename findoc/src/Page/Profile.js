@@ -17,13 +17,38 @@ const Profile = ({ open, onClose }) => {
           </div>
           <div className="details">
             <h2>Darlene Gibbs (34/F)</h2>
-            <p>Email: darlene_gibbs@gmail.com</p>
-            <p>Phone: (219) 555-0114</p>
-            <p>Job Type: Private</p>
-            <p>Age: 34</p>
-            <p>Address: 6391 Elgin St. Celina, Delaware 10299</p>
-            <p>Birthday: 1984-07-09</p>
-            <button className="edit-button">Edit Profile</button>
+            <table className="profile-table">
+              <tbody>
+                <tr>
+                  <td>Email:</td>
+                  <td>darlene_gibbs@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td>(219) 555-0114</td>
+                </tr>
+                <tr>
+                  <td>Job Type:</td>
+                  <td>Private</td>
+                </tr>
+                <tr>
+                  <td>Age:</td>
+                  <td>34</td>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>6391 Elgin St. Celina, Delaware 10299</td>
+                </tr>
+                <tr>
+                  <td>Birthday:</td>
+                  <td>1984-07-09</td>
+                </tr>
+              </tbody>
+            </table>
+            <div className="button-group">
+              <button className="edit-button">Edit Profile</button>
+              <button className="logout-button">Logout</button>
+            </div>
           </div>
         </div>
       </div>

@@ -2,27 +2,54 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #131523;
-  padding: 1rem;
+  background-color: #004d80; /* Calming blue, representing trust and professionalism */
+  padding: 1rem 2rem; /* Slightly increased padding for a more spacious feel */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern touch */
 }
+
 .navbar-logo img {
-  height: 50px;
+  height: 60px; /* Slightly increased size for better visibility */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2)); /* Adds a slight shadow to the logo */
 }
+
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Increased gap for better spacing */
 }
+
 .navbar-links li {
   display: inline;
 }
+
 .navbar-links a {
-  color: #7a7899;
+  color: #e0f7fa; /* Soft cyan, gentle on the eyes and stands out on the blue background */
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+  font-size: 1.3rem; /* Slightly larger font for better readability */
+  font-weight: 500; /* Semi-bold text for a more prominent appearance */
+  padding: 0.5rem 1rem; /* Adds padding for a button-like appearance */
+  border-radius: 8px; /* Rounded corners for a friendly, approachable look */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
 .navbar-links a:hover {
-  color: #ddd;
+  background-color: #0077b3; /* Slightly darker blue for hover effect */
+  color: #fff; /* White text on hover for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow on hover for depth */
+}
+
+.navbar-cta {
+  background-color: #00bfa5; /* Teal color for the call-to-action button */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px; /* More rounded for a distinct CTA style */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+}
+
+.navbar-cta:hover {
+  background-color: #007d71; /* Darker teal on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Extra shadow on hover for emphasis */
 }

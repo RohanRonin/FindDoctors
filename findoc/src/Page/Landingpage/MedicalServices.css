@@ -1,0 +1,135 @@
+.medical-services {
+    background-color: #f9f9ff;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+.image-container {
+    position: relative;
+    flex: 1;
+}
+
+.doctor-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.doctor-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.doctor-info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.doctor-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+.medical-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+    width: 60px;
+    height: 60px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.medical-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.text-container {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.text-container h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.text-container h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.services-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.services-list li::before {
+    content: "✔️"; /* Replace with a suitable icon if needed */
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.discover-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discover-button:hover {
+    background-color: #2874a6;
+}

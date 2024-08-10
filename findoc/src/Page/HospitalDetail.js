@@ -173,6 +173,13 @@ const hospitalsData = [
         image: "/path/to/doctor1.jpg",
       },
       {
+        name: "Dr. Sharmila",
+        specialty: "Cardiologist",
+        location: "Coimbatore",
+        status: "Online",
+        image: "/path/to/doctor1.jpg",
+      },
+      {
         name: "Dr. Pavithran",
         specialty: "Neurologist",
         location: "Madurai",
